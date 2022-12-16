@@ -19,10 +19,11 @@ public class StudentDAO {
 		try {
 			Class.forName(JDBC_DRIVER);
 			conn = DriverManager.getConnection(JDBC_URL,"jwbook","1234");
-			//System.out.println("Connect is Completeeeeeee");
+			System.out.println("conn Data : "+conn);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public void close() {
